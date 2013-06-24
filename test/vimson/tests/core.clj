@@ -1,6 +1,6 @@
 (ns vimson.tests.core
   (:use clojure.test)
-  (:use vimson.core))
+  (:use vimson.parser))
 
 (deftest vimson->clojure-test
   (is (= [123 []] (vimson->clojure "123")))
